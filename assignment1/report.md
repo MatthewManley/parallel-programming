@@ -16,6 +16,6 @@ I have a laptop with a discrete graphics card (Nvidia GTX 960M) so I was able to
 
 It is obvious that parallel computation of mandelbrot sets is required at higher resolutions. For a 40k x 40k resolution mandelbrot set, there are 1 billion 600 million pixels that need to be calculated. A rough estimate shows that calculating a 40k x 40k mandelbrot set with a single thread would take almost 9 days on my computer, making the cuda version of the application run roughly 106,000 times faster than the single threaded version.
 
-(40000\*40000)/(1000\*1000) * 471 = 753600 seconds7.10316
+(40000\*40000)/(1000\*1000) * 471 = 753600 seconds
 
 While increasing resolution of a mandelbrot set is not a practical use of multithreading unless you crank up the iterations (which I had set to 20 for all tests), it does demonstrate the capability of single vs multi-threaded computing.
